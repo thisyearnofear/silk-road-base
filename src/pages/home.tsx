@@ -1,19 +1,47 @@
 import { meta } from "../components/constants";
-const email = meta.email.split('//').join(' // ');
 
 export function Home() {
-	return (
-		<>
-			<h1 class="text-3xl font-medium mb-5">hey.</h1>
-			<p class="text-xl">
-				I'm yuuire, I'm building a better internet where privacy is the default.<br/><br/>
-				I believe in privacy, freedom and free speech. I created <a class="text-brand hover:underline font-bold" href={meta.guide}>a guide to securing your digital life and protecting your privacy</a> which I constantly update.
-				I also have my own <a class="text-brand hover:underline font-bold" href={"https://blog." + meta.plainurl}>blog</a> where I talk about a variety of stuff - from privacy and technology to self-development 🏋️
-			</p>
-			<br/>
-			<p class="text-xl">
-				To contact me, see the <a class="text-brand hover:underline font-bold" href="/links#contact">links</a> page or send an e-mail to <a class="text-brand hover:underline font-bold" href={"mailto:" + meta.email}>{email}</a>
-			</p>
-		</>
-	);
+    return (
+        <>
+            <h1 class="text-3xl font-medium mb-5">FREE ROSS.</h1>
+            <p class="text-xl">
+                After 11 years behind bars, Ross Ulbricht - the visionary
+                founder of Silk Road - has been granted a full and unconditional
+                pardon by President Trump. This marks a historic victory for
+                freedom, privacy, and decentralization.
+            </p>
+            <br />
+            <p class="text-xl">
+                Known as the "Dread Pirate Roberts," Ross created Silk Road in
+                2011 as one of the first platforms to demonstrate Bitcoin's
+                potential for truly peer-to-peer, anonymous transactions.
+                Despite facing life imprisonment for non-violent charges, Ross
+                never wavered from his principles of freedom and individual
+                sovereignty.
+            </p>
+            <br />
+            <p class="text-xl">
+                Today, we honor Ross's legacy on Base - built by a developer who
+                has been part of the freedom journey since the beginning. This
+                project represents our continued commitment to the values Ross
+                fought for: privacy, decentralization, and resistance against
+                overreach.
+            </p>
+            <br />
+            <p class="text-xl">
+                Join our community and support the movement through our{" "}
+                <a class="text-brand hover:underline font-bold" href="/links">
+                    links
+                </a>{" "}
+                page or learn more about Ross's story in our{" "}
+                <a
+                    class="text-brand hover:underline font-bold"
+                    href="/links#press"
+                >
+                    press coverage
+                </a>
+                .
+            </p>
+        </>
+    );
 }
